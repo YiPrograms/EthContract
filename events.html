@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Events Contract</title>
+        <script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+    </head>
+</html>
+<body>
+    <h3 id="txt"></h3>
+    <div id="owner_only" hidden="false">
+        <div>
+            <button id="add_owner_btn">Add Owner</button>
+            <input id="add_owner_addr" placeholder="Address"/>
+        </div>
+        <div>
+            <button id="del_owner_btn">Remove Owner</button>
+            <input id="del_owner_addr" placeholder="Address"/>
+        </div>
+        <div>
+            <button id="add_event_btn">Add Event</button>
+            <input id="add_event_name" placeholder="Address"/>
+            <input id="add_event_raters" placeholder="Raters, [&quot;0x00~&quot;, &quot;0x00~&quot;]"/>
+        </div>
+    </div>
+    <div>
+        <button id="check_event_btn">Check Event</button>
+        <input id="check_event_id" placeholder="Event ID"/>
+    </div>
+    <div>
+        <button id="upload_work_btn">Upload Work</button>
+        <input id="upload_work_id" placeholder="Event ID"/>
+        <input id="upload_work_name" placeholder="Name"/>
+        <input id="upload_work_url" placeholder="URL"/>
+        <input id="upload_work_sha1" placeholder="SHA1"/>
+    </div>
+    
+
+    <script type="text/javascript" src="events.js"></script>
+</body>
